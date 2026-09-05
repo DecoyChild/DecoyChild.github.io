@@ -1,9 +1,28 @@
 body {
-    background-color: #f0f0f0;
+    background-color: #000000;    
+    color: rgb(244, 244, 248);
+    font-family: Arial, Helvetica, sans-serif;
 }
-h1 {
-    color: navy;
-}
+
 p {
     font-size: 16px;
+}
+
+a:link {
+  color: #1a73e8;
+}
+
+/* 2. Visited link (previously clicked) */
+a:visited {
+  color: #6a0dad;
+}
+
+/* 3. Hover link (mouse pointer over it) */
+a:hover {
+  color: #ff4500;
+}
+
+/* 4. Active link (the exact moment it is clicked) */
+a:active {
+  color: #ffcc00;
 }
