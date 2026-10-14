@@ -26,3 +26,9 @@ a:hover {
 a:active {
   color: #ffcc00;
 }
+
+/* Scaling for mobile */
+iframe {
+    max-width: 100%;
+    aspect-ratio: 16 / 9;
+}
