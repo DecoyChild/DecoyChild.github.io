@@ -1,0 +1,265 @@
+body {
+
+    /* background-color: var(--background-color); */
+        background: linear-gradient(
+        110deg,
+        #0b1120 0%,
+        #101b2f 55%,
+        #2c588a 100%
+    );
+    min-height: 100vh;
+    margin: 0 auto;
+
+    color: #FFFFFF;
+    font-family: 'Inter', sans-serif;
+}
+
+div {
+  /* text-align: left; */
+}
+
+h2 {
+  font-weight: bold;
+  text-align: center;
+  font-size: 30px;
+  margin: 1.25rem 2rem 0.75rem 0.5rem;
+  border-top: 1px solid var(--side-border-color);
+  border-bottom: 1px solid var(--side-border-color);
+    /* background-color: #38bdf8; */
+    /* box-shadow: 0 0 60px #38bdf8; */
+    margin: 0px 0;
+  
+}
+
+p {
+     font-size: 30px;
+    text-align: center;
+}
+
+.page-header {
+    color: #fff;
+    text-align: left;
+    background: linear-gradient(
+        110deg,
+        #172e49 0%,
+        #101b2f 55%,
+        #0b1120 100%
+    );
+    padding: 8rem 8rem;
+    margin: 0 auto;
+    
+}
+
+.project-name {
+    font-size: 90px;
+    margin-top: 0;
+    margin-bottom: 0.1rem;
+}
+
+.project-tagline {
+    margin-bottom: 0.5rem;
+    font-weight: normal;
+    opacity: 0.7;
+}
+
+.sub-text {
+  font-size: 12px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-header {
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.div-code {
+  text-align: left;
+    font-size: 0.875rem;
+    width: 100%;
+    max-width: 800px;
+    max-height: 500px;
+
+    overflow: auto;
+
+    border:  var(--border-standard);
+    border-radius: 10px;
+
+    margin: 1.5rem auto;
+    padding: 1rem;
+
+    background-color: #0b1120;
+}
+
+/* 
+* Use this for screen shots and img src
+*/
+.screen-shot {
+  width: 70%;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  border-bottom: var(--border-standard);
+  border-top: var(--border-standard);
+  padding: 1rem;
+      background: linear-gradient(
+        90deg,
+        #172e49 0%,
+        #101b2f 55%,
+        #0b1120 100%
+    );
+}
+
+.div-center {
+  width: 75%;
+  text-align: center;
+  margin: 1rem auto ;
+}
+
+.div-header {
+  text-align: center;
+  font-weight: bold;
+  font-size: 70px;
+  width: 50%;
+  border-top: 1px solid var(--border-color);
+  /* border-bottom: 2px solid var(--side-border-color); */
+  
+  padding: 1rem;
+  margin: 0.5 auto;
+  
+  
+}
+
+.div-showcase {
+  width: 50%;
+  font-size: 20px;
+  /* background-color: var(--div-showcase-color) ; */
+  /* border: 3px solid var(--border-color); */
+  border-radius: 10px;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+
+.div-video {
+  text-align: center;
+  width: 900px;
+  height: 500px;
+  background-color: var(--div-showcase-color) ;
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 1rem;
+  margin:0 auto;
+  margin-top: 1rem;  
+}
+
+.div-screen-cap {
+  text-align: center;
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 9 / 20;
+  object-fit: contain;
+  margin: 0 auto;
+  width: 300px;
+}
+
+.phone-cap {
+  text-align: center;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 1rem;
+  border-radius: 10px;
+  border:  var(--border-standard);
+  background-color: var(--div-header-color) ;
+}
+
+
+/*
+* For any paragrapgh 
+*/
+.content-box {
+  width: 40%;
+  font-size: 16px;
+  line-height: 1.7;
+  border-left: 5px solid var(--side-border-color);
+  padding: 0.5rem 1.5rem;
+  margin: 0 auto;
+  /* background-color: #172338; */
+}
+
+.content-showcase {
+  text-align: left;
+  width: 100%;
+  font-size: 18px;
+  line-height: 1.7;
+  border-left: 5px solid var(--side-border-color);
+  padding: 0.5rem 1.5rem;
+  margin: 0 0.5rem;
+  /* margin-left:1rem; */
+  /* margin-bottom:1rem; */
+  /* background-color: #172338; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+a:link {
+  color: #5ED1DC;
+}
+
+/* 2. Visited link (previously clicked) */
+a:visited {
+  color: #6a0dad;
+}
+
+/* 3. Hover link (mouse pointer over it) */
+a:hover {
+  color: #ff4500;
+}
+
+/* 4. Active link (the exact moment it is clicked) */
+a:active {
+  color: #ffcc00;
+}
+
+/* Scaling for mobile
+iframe {
+    max-width: 100%;
+    aspect-ratio: 16 / 9;
+    /* margin-left: 4%; */
+*/
+
+.separator-glow {
+    height: 2px;
+    background-color: #38bdf8;
+    box-shadow: 0 0 60px #38bdf8;
+    margin: 0px 0;
+}
+.separator-border {
+    border-bottom: 1px solid #334155;
+    margin: 30px 0;
+}
+
+:root {
+    --primary-color: #38bdf8;
+    --background-color: #0c1325;
+    --card-background: #172338;
+    --text-color: #f1f5f9;
+    --border-color: #3c67a4;
+    --side-border-color: #38bdf8;
+    --div-header-color: #24385a;    
+    --div-showcase-color: #202f58a7;   
+    --border-standard: 2px solid var(--border-color);
+}
