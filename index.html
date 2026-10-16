@@ -1,38 +1,222 @@
 <html>
 <head>
-    <title>My Projects</title>
-    <link rel="stylesheet" href="style.css">
+    <title>CS 499 ePortfolio</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body>
+    <body>
+        <header class="page-header" role="banner">
+            <h1 class="project-name">Shayne Greene</h1>
+            <h3 class="project-tagline">CS-499 Computer Science Capstone ePortfolio</h3>
+        </header>
+        
+        <!--  -->
+        <div>
+            <div class="div-header">Professional Self-Assessment</div>
+            <div class="screen-shot">
+                <div class="content-showcase">
+                    This is where the assessment will go
+                </div>
+            </div>
+        </div>
 
-    <h1>Check out my NEW video</h1>
-    
-    <!-- Paste your YouTube embed code here -->
-      <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/difKrVh39UU"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen>
-    </iframe>
+        <!--  -->
+        <div class="div-header">Code Review</div>
+        
+        <div class="screen-shot">
+            <div class="div-center">
+                <p class="content-showcase">
+                    Code review is a review process of code by your peers. It is where others review your code to help identify flaws, bugs, edge cases or any other problems that may create issues after the product is released (GitLab, n.d.). <br><br> This is an important process because it aids in identifying potential issues that you may not have seen. When I finish an application or an enhancement to an existing application, when I test myself, I know how the process should work. So, it can be difficult to find ways to break my own program. Where others would be able to spot because they are reviewing the code objectively. Without the process, the potential for bad programs to escape increases.  
+                </p>
+            </div>
+            <div class="screen-shot">
+                <iframe class="div-video"
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/difKrVh39UU"
+                    title="Code Review"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
 
-    <h1>My Projects</h1>
-    <hr style="border: 2px solid #4f5050;">
-    <h2>CS-350</h2>
-    
-    <a href="https://github.com/DecoyChild/CS-350">
-        View Project on GitHub
-    </a>
-    <hr style="width: 25%; border: 1px solid #333333; margin-left: 0;">
-    <h2>CS-405</h2>
-    
-    <a href="https://github.com/DecoyChild/CS-405">
-        View Project on GitHub
-    </a>
-    <hr style="width: 25%; border: 1px solid #333333; margin-left: 0;">
+        <!--  -->
+        <div class="div-header">Projects</div>
+        
+        <div class="screen-shot">
+            <p class="project-header">Enhancement One: Software Design/Engineering</p>
+            <div class="div-center">
+                <p class="content-showcase">
+                    This Artifact is an Android Application that can run on a phone running Android. It is an application that utilizes a phone built in light sensor to display the current ambient light value in Lux (illuminance). 
+                    <br>
+                    It displays the current value, the maximum, minimum and average values.  This was initially created In February of 2026
+                </p>
+            </div>
+            <div class="phone-cap">   
+                <video class="div-screen-cap" controls>
+                    <source src="videos/sensorApp.mp4" type="video/mp4">
+                </video>
+                <p class="sub-text"> >> Screen capture of final enhancement</p>
+            </div>
+            <div class="div-center">
+                <p class="content-showcase">
+                    I chose to include this artifact because it displays competence in developing a phone app utilizing build in sensor functions. The use of one sensor gives an understanding of the SensorEventListener and its methods and how they work to create working apps using real time data. Using the data to show the min. max and average displays some practical use of the tools given. The artifact was improved by cleaning errors, adding comments to code blocks that were missing comments and adding functionality on the sensorUpdate method. 
+                </p>
+            </div>
+            <div class="div-center">
+                <p class="content-showcase">
+                    The enhancement process allowed me to take more of a design approach since most of the code base was complete. 
+                    While there were improvements made to the code, the heavier lifting was in the UI/UX. There was a learning curve
+                    jumping back into Android Studio. Once I got my bearings, I was able to make the updates and enhancements. 
+                    The biggest improvement with this app is how the lux is displayed. Giving the user a Max, Min and average brightness.
+                    I also added a small game that users can walk around and find the hidden lux value. You get a too high of too low message
+                    to help assist in finding that sweet spot.
+                </p>
+            </div>
+            <a href="https://github.com/DecoyChild/CS-499/tree/main/SensorApp">Enhanced Project on GitHub</a>
+            <a href="https://github.com/DecoyChild/CS-360/tree/main/SensorApp">Original Project on GitHub</a>
+        </div>
 
-</body>
+        <div class="screen-shot">
+            <p class="project-header">CS 410 - Project1</p>
+            <p><a href="https://github.com/DecoyChild/CS-410/tree/main/Project1">Original Project on GitHub</a></p>
+        </div>
+        
+        
+        <div class="screen-shot">
+            <p class="project-header">CS 340 - Animal Shelter CRUD</p>
+            <div class="div-code">
+            <pre><code>
+# Using paramarized queries 
+class ClientRecordHelper:
+    
+    def __init__(self, database):
+        self.db = database
+
+    # Get all the clients from the database 
+    def get_all_clients(self):
+        cursor =  self.get_cursor()
+        select_q = "SELECT * FROM clients"
+        cursor.execute(select_q)
+        return cursor.fetchall()
+
+    # Gets all the services available 
+    def get_all_services(self):
+        cursor =  self.get_cursor()
+        select_q = "SELECT * FROM services"
+        cursor.execute(select_q)    
+        return cursor.fetchall()
+
+    # Lookup a client from the client ID
+    def get_client_by_id(self, id:int):
+        cursor = self.get_cursor() 
+        select_q = "SELECT * FROM clients WHERE client_id = %s"
+        cursor.execute(select_q, (id,))
+        return cursor.fetchone()
+
+    # Get the service description from the ID
+    def get_service_desc(self, id:int):
+        cursor = self.get_cursor() 
+        select_q = "SELECT service_name FROM services WHERE service_id = %s"
+        cursor.execute(select_q, (id,))
+        return cursor.fetchone()
+
+    # Update a clients service choice
+    def update_client_service(self, id:int, service_id:int):
+        cursor = self.get_cursor()
+        update_q = "UPDATE clients SET service_choice = %s WHERE client_id = %s"
+        cursor.execute(update_q, (service_id,id))
+        return cursor.rowcount
+
+    # Add a client 
+    def add_client(self, user_data:dict):
+        cursor = self.get_cursor()
+        # using parameterized queries
+        insert_q = "INSERT INTO clients (first_name, last_name, phone) VALUES (%s, %s, %s)"
+        cursor.execute(insert_q, user_data)
+        self.db.get_connection().commit()
+        return cursor.rowcount
+
+    # Add a user for the application
+    def add_user(self, username:str, password_hash:str):
+        cursor = self.get_cursor()
+        
+        # See if the username exists
+        select_q = "SELECT COUNT(*) FROM users WHERE username = %s"
+        cursor.execute(select_q, (username,))
+        count = cursor.fetchone()
+
+        # If there are any results don't try to add the user
+        if (count[0] == 0):
+            insert_q = "INSERT INTO users (username, password_hash) VALUES (%s, %s)"
+            cursor.execute(insert_q, (username,password_hash))
+            self.db.get_connection().commit()
+            return cursor.rowcount
+        else:
+            return "User alrady exists"
+
+    # Get the password hash to verify against entered password
+    def get_username_and_password_hash(self, username:str):
+        cursor = self.get_cursor()
+        select_q = "SELECT password_hash FROM users WHERE username = %s"
+        cursor.execute(select_q, (username,))
+        record = cursor.fetchone()
+
+        # returns the record 
+        if record is not None:
+            return record
+        else:
+            return
+
+    # Returns true if the user exists
+    def username_exists(self, username:str):
+        cursor = self.get_cursor()
+        select_q = "SELECT COUNT(*) FROM users WHERE username = %s"
+        cursor.execute(select_q, (username,))
+        record = cursor.fetchone()
+        if record[0] > 0:
+            return True
+        else:
+            return False
+
+    # Removes a client 
+    def remove_client_by_id(self, id:int):
+        cursor = self.get_cursor()
+        delete_q = "DELETE FROM clients where client_id = %s"
+        cursor.execute(delete_q, (id,))
+        self.db.get_connection().commit()
+        return cursor.rowcount
+
+    # Gets a cursor
+    def get_cursor(self):
+            connection = self.db.get_connection()
+            return connection.cursor()
+
+    # Prints the clients in a clean format
+    def print_clean(self, record:list):
+        
+        for elem in record:
+            service_name = self.get_service_desc(elem[4])[0]
+            print("".ljust(50,"*"))
+            print(f"Client ID: {elem[0]}")
+            print(f"Name: {elem[1]} {elem[2]}")
+            print(f"Phone: {elem[3]}")
+            print(f"Service Choice: {elem[4]} : {service_name}")
+            </code></pre>
+            </div>
+            <p class="sub-text"> ^^ Code snippet of the helper class used to manage the database requests</p>
+            <div class="screen-shot">
+                <img src="images/animalShelterApp.png" alt="Link to Repository">
+                <p class="sub-text"> ^^ Screen to query the Animal Shelter CRUD</p>
+            </div>
+            <div class="screen-shot">
+                <img src="images/animal_shelter_add_new.png" alt="Link to Repository">
+                <p class="sub-text"> ^^ Screen added for creating a new database field</p>
+            </div>
+        </div>
+        
+    </body>
 </html>
