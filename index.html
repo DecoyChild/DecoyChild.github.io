@@ -6,30 +6,32 @@
 </head>
     <body>
         <header class="page-header" role="banner">
-            <h1 class="project-name">Shayne Greene</h1>
+            <p class="project-name"><b>Shayne</b> Greene</p>
             <h3 class="project-tagline">CS-499 Computer Science Capstone ePortfolio</h3>
         </header>
         
-        <!--  -->
-        <div>
-            <div class="div-header">Professional Self-Assessment</div>
-            <div class="screen-shot">
+        <!-- A S S E S S M E N T -->
+        <div class="page-section">
+            <div class="section-title">
+                <h1>Professional<br>Self-Assessment</h1>
+            </div>
+            <div class="section-content">
                 <div class="content-showcase">
-                    This is where the assessment will go
+                    Code review is a review process of code by your peers. It is where others review your code to help identify flaws, bugs, edge cases or any other problems that may create issues after the product is released (GitLab, n.d.).
+                    This is an important process because it aids in identifying potential issues that you may not have seen. When I finish an application or an enhancement to an existing application, when I test myself, I know how the process should work. So, it can be difficult to find ways to break my own program. Where others would be able to spot because they are reviewing the code objectively. Without the process, the potential for bad programs to escape increases.
                 </div>
             </div>
         </div>
 
-        <!--  -->
-        <div class="div-header">Code Review</div>
-        
-        <div class="screen-shot">
-            <div class="div-center">
-                <p class="content-showcase">
-                    Code review is a review process of code by your peers. It is where others review your code to help identify flaws, bugs, edge cases or any other problems that may create issues after the product is released (GitLab, n.d.). <br><br> This is an important process because it aids in identifying potential issues that you may not have seen. When I finish an application or an enhancement to an existing application, when I test myself, I know how the process should work. So, it can be difficult to find ways to break my own program. Where others would be able to spot because they are reviewing the code objectively. Without the process, the potential for bad programs to escape increases.  
-                </p>
+        <!-- C O D E   R E V I E W -->
+        <div class="page-section">
+            <div class="section-title">
+                <h1>Code Review</h1>
             </div>
-            <div class="screen-shot">
+            <div class="section-content">
+                <div class="content-showcase">
+                    Code review is a review process of code by your peers. It is where others review your code to help identify flaws, bugs, edge cases or any other problems that may create issues after the product is released (GitLab, n.d.). <br><br> This is an important process because it aids in identifying potential issues that you may not have seen. When I finish an application or an enhancement to an existing application, when I test myself, I know how the process should work. So, it can be difficult to find ways to break my own program. Where others would be able to spot because they are reviewing the code objectively. Without the process, the potential for bad programs to escape increases.      
+                </div>
                 <iframe class="div-video"
                     width="560"
                     height="315"
@@ -43,30 +45,33 @@
             </div>
         </div>
 
-        <!--  -->
+        <!-- P R O J E C T S -->
         <div class="div-header">Projects</div>
+
+        <!-- E N H A N C E M E N T   O N E  -->
+        <div class="page-section">
+            <div class="section-title">
+                <h1>Enhancement One: Software Design/Engineering</h1>
+            </div>
         
-        <div class="screen-shot">
-            <p class="project-header">Enhancement One: Software Design/Engineering</p>
-            <div class="div-center">
-                <p class="content-showcase">
+            <div class="section-content">
+                <div class="section-title">
+                    <h1>Sensor App</h1>
+                    <a href="https://github.com/DecoyChild/CS-360/tree/main/SensorApp" class="link-button" target="_blank">Original Project on GitHub</a>
+                    
+                    <a href="https://github.com/DecoyChild/CS-499/tree/main/SensorApp" class="link-button" target="_blank">Enhanced Project on GitHub</a>
+                </div>
+                <div class="content-showcase">
                     This Artifact is an Android Application that can run on a phone running Android. It is an application that utilizes a phone built in light sensor to display the current ambient light value in Lux (illuminance). 
                     <br>
                     It displays the current value, the maximum, minimum and average values.  This was initially created In February of 2026
-                </p>
-            </div>
-            <div class="phone-cap">   
+                </div>
                 <video class="div-screen-cap" controls>
                     <source src="videos/sensorApp.mp4" type="video/mp4">
                 </video>
-                <p class="sub-text"> >> Screen capture of final enhancement</p>
-            </div>
-            <div class="div-center">
                 <p class="content-showcase">
                     I chose to include this artifact because it displays competence in developing a phone app utilizing build in sensor functions. The use of one sensor gives an understanding of the SensorEventListener and its methods and how they work to create working apps using real time data. Using the data to show the min. max and average displays some practical use of the tools given. The artifact was improved by cleaning errors, adding comments to code blocks that were missing comments and adding functionality on the sensorUpdate method. 
                 </p>
-            </div>
-            <div class="div-center">
                 <p class="content-showcase">
                     The enhancement process allowed me to take more of a design approach since most of the code base was complete. 
                     While there were improvements made to the code, the heavier lifting was in the UI/UX. There was a learning curve
@@ -75,148 +80,104 @@
                     I also added a small game that users can walk around and find the hidden lux value. You get a too high of too low message
                     to help assist in finding that sweet spot.
                 </p>
+                
             </div>
-            <a href="https://github.com/DecoyChild/CS-499/tree/main/SensorApp">Enhanced Project on GitHub</a>
-            <a href="https://github.com/DecoyChild/CS-360/tree/main/SensorApp">Original Project on GitHub</a>
         </div>
+        <!-- E N H A N C E M E N T  O N E  E N D-->
 
-        <div class="screen-shot">
-            <p class="project-header">CS 410 - Project1</p>
-            <p><a href="https://github.com/DecoyChild/CS-410/tree/main/Project1">Original Project on GitHub</a></p>
-        </div>
-        
-        
-        <div class="screen-shot">
-            <p class="project-header">CS 340 - Animal Shelter CRUD</p>
-            <div class="div-code">
-            <pre><code>
-# Using paramarized queries 
-class ClientRecordHelper:
-    
-    def __init__(self, database):
-        self.db = database
-
-    # Get all the clients from the database 
-    def get_all_clients(self):
-        cursor =  self.get_cursor()
-        select_q = "SELECT * FROM clients"
-        cursor.execute(select_q)
-        return cursor.fetchall()
-
-    # Gets all the services available 
-    def get_all_services(self):
-        cursor =  self.get_cursor()
-        select_q = "SELECT * FROM services"
-        cursor.execute(select_q)    
-        return cursor.fetchall()
-
-    # Lookup a client from the client ID
-    def get_client_by_id(self, id:int):
-        cursor = self.get_cursor() 
-        select_q = "SELECT * FROM clients WHERE client_id = %s"
-        cursor.execute(select_q, (id,))
-        return cursor.fetchone()
-
-    # Get the service description from the ID
-    def get_service_desc(self, id:int):
-        cursor = self.get_cursor() 
-        select_q = "SELECT service_name FROM services WHERE service_id = %s"
-        cursor.execute(select_q, (id,))
-        return cursor.fetchone()
-
-    # Update a clients service choice
-    def update_client_service(self, id:int, service_id:int):
-        cursor = self.get_cursor()
-        update_q = "UPDATE clients SET service_choice = %s WHERE client_id = %s"
-        cursor.execute(update_q, (service_id,id))
-        return cursor.rowcount
-
-    # Add a client 
-    def add_client(self, user_data:dict):
-        cursor = self.get_cursor()
-        # using parameterized queries
-        insert_q = "INSERT INTO clients (first_name, last_name, phone) VALUES (%s, %s, %s)"
-        cursor.execute(insert_q, user_data)
-        self.db.get_connection().commit()
-        return cursor.rowcount
-
-    # Add a user for the application
-    def add_user(self, username:str, password_hash:str):
-        cursor = self.get_cursor()
-        
-        # See if the username exists
-        select_q = "SELECT COUNT(*) FROM users WHERE username = %s"
-        cursor.execute(select_q, (username,))
-        count = cursor.fetchone()
-
-        # If there are any results don't try to add the user
-        if (count[0] == 0):
-            insert_q = "INSERT INTO users (username, password_hash) VALUES (%s, %s)"
-            cursor.execute(insert_q, (username,password_hash))
-            self.db.get_connection().commit()
-            return cursor.rowcount
-        else:
-            return "User alrady exists"
-
-    # Get the password hash to verify against entered password
-    def get_username_and_password_hash(self, username:str):
-        cursor = self.get_cursor()
-        select_q = "SELECT password_hash FROM users WHERE username = %s"
-        cursor.execute(select_q, (username,))
-        record = cursor.fetchone()
-
-        # returns the record 
-        if record is not None:
-            return record
-        else:
-            return
-
-    # Returns true if the user exists
-    def username_exists(self, username:str):
-        cursor = self.get_cursor()
-        select_q = "SELECT COUNT(*) FROM users WHERE username = %s"
-        cursor.execute(select_q, (username,))
-        record = cursor.fetchone()
-        if record[0] > 0:
-            return True
-        else:
-            return False
-
-    # Removes a client 
-    def remove_client_by_id(self, id:int):
-        cursor = self.get_cursor()
-        delete_q = "DELETE FROM clients where client_id = %s"
-        cursor.execute(delete_q, (id,))
-        self.db.get_connection().commit()
-        return cursor.rowcount
-
-    # Gets a cursor
-    def get_cursor(self):
-            connection = self.db.get_connection()
-            return connection.cursor()
-
-    # Prints the clients in a clean format
-    def print_clean(self, record:list):
-        
-        for elem in record:
-            service_name = self.get_service_desc(elem[4])[0]
-            print("".ljust(50,"*"))
-            print(f"Client ID: {elem[0]}")
-            print(f"Name: {elem[1]} {elem[2]}")
-            print(f"Phone: {elem[3]}")
-            print(f"Service Choice: {elem[4]} : {service_name}")
-            </code></pre>
+        <!-- E N H A N C E M E N T   T W O  -->
+        <div class="page-section">
+            <div class="section-title">
+                <h1>Enhancement Two: <b>Algorithms and Data Structure</b></h1>
             </div>
-            <p class="sub-text"> ^^ Code snippet of the helper class used to manage the database requests</p>
-            <div class="screen-shot">
+
+            <div class="section-content">
+                <div class="section-title">
+                    <h1>Client Manager</h1>
+                    <a href="https://github.com/DecoyChild/CS-410/tree/main/Project1" class="link-button" target="_blank">Original Project on GitHub</a>
+                    <a href="https://github.com/DecoyChild/CS-499/tree/main/clientManager" class="link-button" target="_blank">Original Project on GitHub</a>
+                </div>
+                <p class="content-showcase">
+                    This artifact is a program that maintains client information for an investment company. 
+                    The program allows users to maintain a set of clients by changing the type of service they are assigned; either 
+                    Retirement and Brokerage. 
+                    The original program was created with hard coded uses that only lived during runtime. The username and password
+                    were also hard coded in plain text and only lived during runtime.
+                    It was designed to as a test to find and correct Software security bugs. 
+                    <br>
+                    The program was originally created in C++ and created in April of 2026.
+                </p>
+                <img src="images/cm-main-menu.png" alt="Link to Repository">
+                <p class="sub-text"> Main menu running in a terminal</p>
+                <img src="images/cm-create-user-password.png" alt="Link to Repository">
+                <p class="sub-text"> Creating a user. Password text is hidden from input</p>
+                <img src="images/cm-logged-in.png" alt="Link to Repository">
+                <p class="sub-text"> User logged in</p>
+                <img src="images/cm-hased-password.png" alt="Link to Repository">
+                <p class="sub-text"> Password hashed and stored in a database</p>
+                
+                <p class="content-showcase">
+                    This was a good candidate because it had the most potential for improvement. 
+                    It mimics a real-life data and application. Maintaining customer records is always going 
+                    to be part of almost all industries. This program is a nice framework for maintaining such 
+                    data. I chose this because I wanted to port from C++ to Python, and this was a nice challenge. 
+                    I also saw an opportunity to learn and sharpen my skills in password hashing. 
+                    The original had a hard coded username and password to validate against. 
+                </p>
+                <p class="content-showcase">
+                    The improvements were more than originally anticipated. The program had five users that were 
+                    hard coded and the data only lived during runtime. The username had a hardcoded password. My main improvement 
+                    was to take the runtime and variable users and clients from the code base and create a mySQL database to 
+                    store and reference client information. The hardcoded username and hashed password were also stored in that database. 
+                    Another improvement was to port the program from C++ to Python because of the available libraries to 
+                    handle hashing and cryptography.
+                    <br><br>
+                    Modifying this artifact was a longer process  than anticipated. In order to accomplish my goals there were outside resources that needed to be configured. Most notable was the mySQL instance that I  had to install and run locally. I learned about using password hashing and the main difference between hashing and encrypting and when to use them. Password and data that you wont need to retrieve would be a candidate for Hashing. Like passwords that only need to be verified by comparing the hashes. Where encryption allows for credentials to be stored safely.
+                    One main challenge was to port the program into python and creating classes that help manage each component. Mostly for portability and scaling ease.  This would also have been possible in C++, being an OOL.
+                    <br><br>
+                    The specific components that I would showcase is the security improvements of password hashing. 
+                    Using python libraries to hash a pw and to verify a user entry against a hashed password.
+                </p>
+
+            </div>
+        </div>
+        <!-- END TWO -->
+        
+        <!-- E N H A N C E M E N T   T H R E E   -->
+        <div class="page-section">
+            <div class="section-title">
+                <h1>Enhancement Three: Databases</h1>
+            </div>
+
+            <div class="section-content">
+                <div class="section-title">
+                    <h1>Animal Shelter CRUD</h1>
+                    <a href="https://github.com/DecoyChild/CS-340" class="link-button" target="_blank">Original project on Github</a>
+                    <a href="https://github.com/DecoyChild/CS-499/tree/main/animal_shelter_maint/python_gui" class="link-button" target="_blank">Enhanced project on Github</a>
+                </div>
+                <p class="content-showcase">This artifact is a CRUD (Create, Read, Update, Delete) class to maintain a MongoDB.  It hold methods that will create a database connection and access tools to a database. It was created in December of 2025. I chose to include this because it was a good foundation for any program that will need to have access to a MongoDB. The core foundation already exists, it just needs a better way to interface with it.</p>
+                <p class="content-showcase">
+                    This artifact was included to showcase skills on portability and scalability. 
+                    To move away from the using Jupiter notebook by way of accessing the CRUD class, I created a simple
+                    GUI that would simplify accessing the database. Taking away any need for knowledge on how the CRUD 
+                    works. Using the jupiter notebook, the user would need to be familular with Python and the classes 
+                    within the CRUD. The GUI adds a layer of abstraction making access simple. 
+                </p>
+                <p class="content-showcase">
+                    Modifying this artifact allowed me to venture into the Python GUI world. 
+                    I work with UI using windowbuilder. Seeing the difference between creating 
+                    an interface programically rather than a drag and drop gave insight into how the
+                    controls interact with each other. The main challenge was figuring out the layout 
+                    using the .grid() for each component. Once I started to add frames I had a better 
+                    understanding of how the layouts are 
+                </p>
+
                 <img src="images/animalShelterApp.png" alt="Link to Repository">
                 <p class="sub-text"> ^^ Screen to query the Animal Shelter CRUD</p>
-            </div>
-            <div class="screen-shot">
+
                 <img src="images/animal_shelter_add_new.png" alt="Link to Repository">
                 <p class="sub-text"> ^^ Screen added for creating a new database field</p>
             </div>
-        </div>
-        
+        </div>       
     </body>
 </html>
