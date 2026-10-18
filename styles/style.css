@@ -27,6 +27,23 @@ p {
     border-bottom: 1px solid var(--side-border-color);
 }
 
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 1rem 0;
+}
+
+.tech-box {
+  display: inline-block;
+  font-size: 14px;
+  border: 1px solid var(--side-border-color);
+  border-radius: 8px;
+  font-size: 14px;
+  padding:0.5rem;
+  background-color: #172b49;
+}
+
 .project-name {
     font-size: 90px;
     margin-top: 0;
